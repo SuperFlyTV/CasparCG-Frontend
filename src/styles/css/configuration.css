@@ -1,0 +1,79 @@
+.options {
+  align-items: center;
+  display: inherit;
+  fill: #27303B;
+  margin-bottom: 0.5em;
+}
+.options label, .options select, .options button {
+  color: white;
+  font-weight: 300;
+  margin: 0;
+}
+.options label, .options select {
+  margin-right: 1em;
+}
+.options select {
+  background-color: #27303B;
+}
+.options svg {
+  width: 1.75em;
+}
+.options .right {
+  align-items: inherit;
+  display: inherit;
+  margin-left: auto;
+  padding: 0;
+}
+
+.configuration {
+  background-color: #464646;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  overflow: inherit;
+}
+.configuration h2 {
+  color: white;
+  font-weight: 300;
+  margin: 0;
+}
+.configuration select {
+  background-color: #464646;
+}
+.configuration .card {
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: grid;
+  grid-template-columns: 1fr 2fr min-content;
+  grid-column: span 3;
+  grid-gap: 0.5em;
+  margin: 1vh 1vw;
+  padding: 1vh 0.5vw;
+}
+.configuration .card h2, .configuration .card h2 button {
+  align-items: center;
+  display: flex;
+}
+.configuration .card h2 {
+  grid-column: span 3;
+}
+.configuration .card label {
+  grid-column: 1;
+}
+.configuration .card svg, .configuration .card .checkbox, .configuration .card select, .configuration .card input {
+  grid-column: 2;
+}
+.configuration .card svg {
+  width: 1.5rem;
+}
+.configuration .card .checked::after {
+  font-size: 1.25em;
+  margin-top: -0.15em;
+  margin-left: 0.15em;
+}
+.configuration .card .validate {
+  grid-column: 3;
+  justify-self: center;
+}
+
+/*# sourceMappingURL=configuration.css.map */

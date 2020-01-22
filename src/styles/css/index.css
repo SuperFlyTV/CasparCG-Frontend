@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+header {
+  align-items: center;
+  background-color: #404F61;
+  color: white;
+  display: flex;
+  padding: 1vh 1vw;
+}
+header * {
+  font-weight: 300;
+}
+header h1 {
+  margin: 0;
+}
+header button {
+  align-items: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  display: inherit;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+}
+header svg {
+  margin: 0 1vw;
+  width: 2vw;
+}
+header p {
+  margin: 0;
+}
+
+body {
+  background-color: #27303B;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+main {
+  display: inherit;
+  flex: 1;
+  padding: 2vh 0;
+  overflow: inherit;
+}
+main a {
+  color: white;
+  text-decoration: none;
+}
+main a:visited {
+  color: white;
+}
+main input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+}
+main section {
+  margin: 0 1vw;
+}
+main label, main select {
+  color: white;
+}
+main select, main button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.25vh 0.5vw;
+}
+main select {
+  border-radius: 10px;
+}
+main button {
+  border: none;
+}
+
+.main-section {
+  display: inherit;
+  flex-direction: column;
+  overflow: inherit;
+  width: 100%;
+}
+.main-section button svg {
+  font-size: unset;
+}
+.main-section .plus {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-width: 2em;
+}
+.main-section .checkbox {
+  border-radius: 5px;
+  border: 1px solid white;
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+}
+.main-section .checked::after {
+  color: white;
+  content: "✓";
+  position: absolute;
+  top: 0px;
+}
+.main-section .plus, .main-section .minus {
+  stroke: white;
+  stroke-width: 2em;
+}
+.main-section .plus circle, .main-section .minus circle {
+  fill: none;
+}
+.main-section .minus svg {
+  transform: rotate(45deg);
+}
+.main-section .options h2 {
+  color: white;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  padding-right: 2em;
+}
+
+nav {
+  background-color: #384555;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  display: inherit;
+  flex-direction: column;
+  padding: 1vh 1vw;
+}
+nav a {
+  border-bottom: 2px solid transparent;
+  margin: 3vh 0;
+  text-align: center;
+  width: min-content;
+}
+nav a .config-icon {
+  fill: white;
+}
+nav a .logs-icon rect, nav a .logs-icon line {
+  fill: white;
+  stroke: #27303B;
+}
+nav a .setup-icon {
+  stroke: white;
+}
+nav a.active {
+  border-bottom: 2px solid white;
+}
+nav a.active .config-icon {
+  fill: #27303B;
+}
+nav a.active .logs-icon rect {
+  fill: #384555;
+  stroke: white;
+}
+nav a.active .logs-icon line {
+  stroke: white;
+}
+nav a.active .setup-icon {
+  stroke: #27303B;
+}
+nav svg {
+  width: 4em;
+}
+
+aside {
+  color: white;
+  display: inherit;
+  flex-direction: column;
+  width: 25vw;
+}
+aside h2 {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 0.22em;
+  text-align: center;
+}
+aside div.messages {
+  display: inherit;
+  flex-direction: column;
+  background-color: #464646;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  padding: 0 0.5vw;
+}
+aside p {
+  margin: 0.5em 0;
+}
+aside .warn {
+  border-bottom: 2px solid #eb6f00;
+}
+aside .error {
+  border-bottom: 2px solid #cf4040;
+}
+
+.subheader {
+  font-size: 1.25em;
+}
+
+/*# sourceMappingURL=index.css.map */

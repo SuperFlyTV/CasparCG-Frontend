@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+@import './header';
+@import './_variables';
+
+body {
+    background-color: #27303B;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    height: 100vh;
+    margin: 0;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+main {
+    display: inherit;
+    flex: 1;
+    padding: 2vh 0;
+    overflow: inherit;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:visited {
+            color: white;
+        }
+    }
+
+    input {
+        border: none;
+        border-radius: 5px;
+        padding: .25em .5em;
+    }
+    
+    section {
+        margin: 0 1vw;
+    }
+
+    label, select {
+        color: white;
+    }
+
+    select, button {
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: 1px solid white;
+        font-family: inherit;
+        font-size: 1em;
+        padding: .25vh .5vw;
+    }
+    select {border-radius: 10px;}
+    button {border: none;}
+}
+
+.main-section {
+    display: inherit;
+    flex-direction: column;
+    overflow: inherit;
+    width: 100%;
+
+    button svg {font-size: unset;}
+    .plus {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-width: 2em;
+    }
+
+    .checkbox {
+        border-radius: 5px;
+        border: 1px solid white;
+        position: relative;
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .checked::after {
+        color: white;
+        content: '\2713';
+        position: absolute;
+        top: 0px;
+    }
+
+    .plus, .minus {
+        stroke: white;
+        stroke-width: 2em;
+        circle {
+            fill: none;
+        }
+    }
+
+    .minus svg {transform: rotate(45deg);}
+
+    .options h2 {
+        color: white;
+        margin: 0;
+        font-size: 2em;
+        font-weight: 300;
+        padding-right: 2em;
+    }
+}
+
+nav {
+    background-color: $dark-blue;
+    box-shadow: 0 0 15px rgba($color: #000000, $alpha: .25);
+    display: inherit;
+    flex-direction: column;
+    padding: 1vh 1vw;
+
+    a {
+        border-bottom: 2px solid transparent;
+        margin: 3vh 0;
+        text-align: center;
+        width: min-content;
+
+        .config-icon {fill: white;}
+        .logs-icon {
+            rect, line {
+                fill: white;
+                stroke: $background;
+            }
+        }
+        .setup-icon {stroke: white;}
+     }
+
+    a.active {
+        border-bottom: 2px solid white;
+
+        .config-icon {fill: $background;}
+        .logs-icon {
+            rect {fill: $dark-blue; stroke: white;}
+            line {stroke: white;}
+        }
+        .setup-icon {stroke: $background;}
+    }
+    svg {
+        width: 4em;
+    }
+    
+}
+
+aside {
+    color: white;
+    display: inherit;
+    flex-direction: column;
+   
+    width: 25vw;
+
+    h2 {
+        font-weight: 300;
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: .22em;
+        text-align: center;
+    }
+
+    div.messages {
+        display: inherit;
+        flex-direction: column;
+        background-color: $grey;
+        box-shadow: 0 0 15px rgba($color: #000000, $alpha: .25);
+        flex: 1;
+        padding: 0 .5vw;
+    }
+
+    p {
+        margin: .5em 0;
+    }
+
+    .warn {
+        border-bottom: 2px solid #eb6f00 ;
+    }
+    .error {
+        border-bottom: 2px solid rgb(207, 64, 64) ;
+    }
+}
+
+.subheader {font-size: 1.25em;}

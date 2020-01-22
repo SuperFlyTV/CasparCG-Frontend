@@ -1,0 +1,29 @@
+@import './_variables';
+
+.main-section .setup {
+    background-color: $grey;
+    flex: 1;
+    position: relative;
+    fill: $grey;
+    
+    form {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-auto-rows: min-content;
+        grid-gap: 1em;
+        padding: 2vh .5vw;
+    }
+
+    label {
+        white-space: nowrap;
+    }
+
+    button {
+        bottom: 0;
+        margin-right: auto;  
+        position: absolute;
+        width: min-content;
+
+        svg {width: 3em;}
+    }
+}

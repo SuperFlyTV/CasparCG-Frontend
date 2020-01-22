@@ -1,0 +1,27 @@
+.main-section .setup {
+  background-color: #464646;
+  flex: 1;
+  position: relative;
+  fill: #464646;
+}
+.main-section .setup form {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-auto-rows: min-content;
+  grid-gap: 1em;
+  padding: 2vh 0.5vw;
+}
+.main-section .setup label {
+  white-space: nowrap;
+}
+.main-section .setup button {
+  bottom: 0;
+  margin-right: auto;
+  position: absolute;
+  width: min-content;
+}
+.main-section .setup button svg {
+  width: 3em;
+}
+
+/*# sourceMappingURL=setup.css.map */

@@ -1,0 +1,36 @@
+@import './_variables';
+
+.options-logs {
+    
+}
+
+.main-section .logs {
+    background-color: $grey;
+    box-shadow: 0 0 15px rgba($color: #000000, $alpha: .25);
+    display: inherit;
+    flex: 1;
+    flex-direction: column;
+    overflow: inherit;
+
+    > div {
+        align-items: center;
+        border-bottom: 1px solid white;
+        display: inherit;
+        color: white;
+        margin: 0 1vw;
+
+        p {
+            margin: .5vw 0;
+            &:first-of-type {margin-right: auto;}
+        }
+
+        .time {padding: 0 1vw;}
+
+        .checkbox {min-width: 1.5em;}
+        .checked::after {
+            font-size: 1.25em;
+            margin-top: -.15em;
+            margin-left: 0.15em;
+        }
+    }
+}

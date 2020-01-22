@@ -1,0 +1,34 @@
+.main-section .logs {
+  background-color: #464646;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  overflow: inherit;
+}
+.main-section .logs > div {
+  align-items: center;
+  border-bottom: 1px solid white;
+  display: inherit;
+  color: white;
+  margin: 0 1vw;
+}
+.main-section .logs > div p {
+  margin: 0.5vw 0;
+}
+.main-section .logs > div p:first-of-type {
+  margin-right: auto;
+}
+.main-section .logs > div .time {
+  padding: 0 1vw;
+}
+.main-section .logs > div .checkbox {
+  min-width: 1.5em;
+}
+.main-section .logs > div .checked::after {
+  font-size: 1.25em;
+  margin-top: -0.15em;
+  margin-left: 0.15em;
+}
+
+/*# sourceMappingURL=logs.css.map */

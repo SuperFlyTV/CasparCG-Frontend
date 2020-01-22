@@ -1,0 +1,23 @@
+{
+  "name": "casparcg_configurator_electron",
+  "version": "0.0.1",
+  "description": "An Electron app that allows an end user to modifiy the CasparCG Configuration file from a convienvt GUI",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "tasklist": "^4.0.1",
+    "tree-kill": "^1.2.2"
+  },
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "electron-reload": "^1.5.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "debug": "./node_modules/.bin/electron --inspect=5858 .",
+    "scss": "sass --watch ./src/styles/scss:./src/styles/css",
+    "build": "electron-packager .  --ignore=src/tmp --overwrite  --prune=true --out=build"
+  },
+  "author": "Christopher Ouellette",
+  "license": "MIT"
+}
