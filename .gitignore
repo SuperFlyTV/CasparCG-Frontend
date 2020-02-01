@@ -1,9 +1,3 @@
 node_modules
-
-# Electron App Ignores
-src/styles/css/*.map
-.env
+dist
 build
-.vscode
-
-src/tmp
