@@ -1,0 +1,30 @@
+@import '../_variables.scss';
+
+a {
+    padding: .5vh .5vw;
+}
+
+button {
+    background-color: $neon-green;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.25rem;
+    padding: .5vh .5vw;
+    text-align: center;
+
+    &.click-only {
+        
+    }
+
+    &.inactive {
+        background-color: $caspar-color;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:visited {
+        color: white;
+    }
+}

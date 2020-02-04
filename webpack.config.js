@@ -7,6 +7,7 @@
 
 const path = require('path');
 const HWP = require('html-webpack-plugin');
+const webpack = require("webpack"); 
 
 module.exports = {
     // React Entry Point
@@ -19,8 +20,11 @@ module.exports = {
     },
     // Where the bundles are output
     output: {
-        path: path.resolve(__dirname, './dist/client-bundled'),
-        filename: 'index_bundle.js'
+        path: path.resolve(__dirname, './dist/client'),
+        filename: '[name].js'
+    },
+    optimization: {
+        minimize: false
     },
     // What to do with each file
     module: {
@@ -68,7 +72,11 @@ module.exports = {
     plugins: [
         new HWP({
             template: 'src/client/index.html'
-        })
+        }),
+        // Allows the use of electron in React
+        new webpack.ExternalsPlugin('commonjs', [
+            'electron'
+        ])
     ],
     // Webpack Dev Server settings
     devServer: {

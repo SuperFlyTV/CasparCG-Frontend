@@ -2,9 +2,9 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import './scss/index.scss';
 
-import {Header} from './components/Header'; 
+import App from './components/App'; 
 
 ReactDOM.render(
-    <div><Header status="disconnected" /></div>,
-    document.querySelector('body')
+    <App />,
+    document.querySelector('#frontend-application-container')
 );

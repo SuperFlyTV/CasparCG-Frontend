@@ -1,0 +1,61 @@
+@import '../_variables.scss';
+
+nav {
+    background-color: $light-blue;
+    box-shadow: $drop-shadow;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0;
+    padding: 1vh;
+
+    a {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 2vh;
+        text-align: center;
+
+        &.active {
+            border-bottom: 1.5px solid white;
+            .caspar-icon-1 {
+                fill: $background;
+            }
+            .console-icon {
+                rect {
+                    fill: $background;
+                }
+                line {
+                    stroke: white
+                }
+            }
+        }
+
+        &:not(.active) {
+            border-bottom: 1.5px solid transparent;
+            .caspar-icon-1 {
+                fill: $caspar-color;
+            }
+            .console-icon {
+                rect {
+                    fill: white;
+                    stroke: $background;
+                }
+                line {
+                    stroke: $background;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .caspar-icon {
+
+        width: 3vw;
+    }
+
+    svg {
+        stroke: white;
+    }
+}

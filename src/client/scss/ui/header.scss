@@ -1,0 +1,30 @@
+@import '../_variables.scss';
+
+header {
+    background-color: $light-blue;
+    color: white;
+    display: flex;
+    height: min-content;
+    grid-column: span 2;
+    padding: 1vh 1%;
+    width: 98%;
+
+    h1 {
+        font-weight: 300;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    svg {
+        margin-left: auto;
+        stroke: white;
+        width: 2vw;
+
+        .active {
+            stroke: $connected-green;
+        }
+        .inactive {
+            stroke: $disconnected-red;
+        }
+    }
+}

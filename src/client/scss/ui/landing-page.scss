@@ -1,0 +1,43 @@
+@import '../_variables.scss';
+
+main.landing-page {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 1vh 0;
+        padding-bottom: 1vh;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    .caspar-icon {
+        width: 10vw;
+
+        .active { stroke: $connected-green }
+        .inactive { stroke: $disconnected-red }
+    }
+
+    .server-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-width: 15vw;
+
+        p:nth-of-type(even) {
+            text-align: right;
+        }
+    }
+
+    .controls {
+        margin-top: auto;
+
+        button { margin: 0 1vw;}
+    }
+}
