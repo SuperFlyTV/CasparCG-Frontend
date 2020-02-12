@@ -32,4 +32,27 @@ main {
     background-color: $grey;
     box-shadow: $drop-shadow;
     margin: 2vh 1vw;
+    position: relative;
+}
+
+.message-board {
+    background-color: $grey;
+    box-shadow: $drop-shadow;
+    border-radius: 5px;
+    margin: .5vh .5vw;
+    padding: .5vh .5vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 25vw;
+
+    &:not(.visible) {
+        opacity: 0;
+        z-index: -10;
+    }
+
+    p {
+        color: white;
+        margin: 0;
+    }
 }

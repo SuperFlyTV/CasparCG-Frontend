@@ -1,0 +1,65 @@
+@import '../_variables.scss';
+
+.console-page {
+    background-color: unset;
+    box-shadow: unset;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .controls {
+        display: inherit;
+        justify-content: flex-end;
+        padding-bottom: 1vh;
+
+        button {
+            margin: 0 1vw;
+        }
+    }
+
+    .logs {
+        background-color: $grey;
+        flex: 1;
+        overflow: auto;
+        .log {
+            display: flex;
+            margin: .25vh 0;
+            padding: .25vh 0;
+        }
+        .error {
+            border-bottom: 2px solid $disconnected-red;
+        }
+        p {
+            color: white;
+            margin: 0;
+
+            &:first-of-type {
+                white-space: nowrap;
+                margin: 0 .5vw;
+            }
+        }
+    }
+
+    .console-input {
+        align-items: center;
+        background-color: $grey;
+        color: white;
+        display: inherit;
+        margin-top: 1vh;
+        padding: .5vh .5vw;
+
+        label {
+            padding-right: 1vw;
+        }
+
+        input {
+            background-color: rgba(0,0,0,0);
+            border: 2px solid white;
+            color: inherit;
+            border-radius: 5px;
+            flex: 1;
+            font-size: 1em;
+            padding: .5vh .5vw;
+        }
+    }
+}

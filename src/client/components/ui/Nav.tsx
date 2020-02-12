@@ -21,6 +21,7 @@ export default class Nav extends React.Component<NavProps, NavState> {
     render() {
         return (
             <nav>
+                { /* Main link tags for the application */}
                 <NavLink exact to={'/'}>
                     <CasparIcon />
                     <p>Server</p>
